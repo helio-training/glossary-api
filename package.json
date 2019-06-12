@@ -1,0 +1,23 @@
+{
+  "name": "glossary-api",
+  "description": "",
+  "dependencies": {
+    "@types/node": "^12.0.8",
+    "apollo-datasource-rest": "latest",
+    "apollo-server": "2.1.0",
+    "graphql": "14.0.2",
+    "graphql-import": "^0.7.1",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx nodemon index.js localhost 4000"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@types/graphql": "14.0.1",
+    "nodemon": "1.18.4"
+  }
+}

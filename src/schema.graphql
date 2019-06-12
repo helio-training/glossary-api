@@ -1,0 +1,25 @@
+type Query {
+  categories: [Category]
+  category(id: String): Category
+  terms: [Term]
+  term(id: String): Term
+}
+
+type Term {
+  name: String!
+  description: String
+
+  isActive: Boolean
+  isPublished: Boolean
+
+  tags: [String!]!
+  related: [Term!]!
+  categories: [Category!]!
+}
+
+type Category {
+  name: String!
+  isActive: Boolean
+
+  terms: [Term!]!
+}
